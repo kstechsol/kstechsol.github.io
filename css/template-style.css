@@ -1859,3 +1859,19 @@ a.tab-label.active-btn {
 #submit_button {
   color: white !important;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox {
+  height: auto !important;
+  width: 400px !important;
+  margin-left: 20px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
