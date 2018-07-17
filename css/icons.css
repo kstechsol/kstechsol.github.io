@@ -200,8 +200,8 @@
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color:#e3e3e3;
-  speak: none; 
+  color:#1d4989;
+  speak: none;
   text-transform: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -593,10 +593,10 @@
 .icon-sli-social-youtube,
 .icon-sli-social-dropbox {
   font-family: 'sli';
-  font-style: normal;  
+  font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color:#e3e3e3;
+  color:#1d4989;
   speak: none;
   text-transform: none;
   /* Better Font Rendering =========== */
