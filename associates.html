@@ -19,7 +19,6 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script>
       $ ( document ).ready(() => {
-        $('header').load("modules/header.html");
         $('footer').load("modules/footer.html");        
       });
     </script>
@@ -28,7 +27,47 @@
   <body class="size-1280">
     <!-- HEADER -->
     <header role="banner" class="position-absolute">
-    </header>
+<!-- Top Navigation -->
+<nav class="background-transparent background-primary-dott full-width sticky">
+  <div class="top-nav">
+    <!-- mobile version logo -->
+    <div class="logo hide-l hide-xl hide-xxl">
+      <a href="index.html" class="logo">
+        <!-- Logo White Version -->
+        <img class="logo-white" src="img/logo/kstechlogowhite.png" alt="">
+        <!-- Logo Dark Version -->
+        <img class="logo-dark" src="img/logo/kstechlogo.png" alt="">
+      </a>
+    </div>
+    <p class="nav-text"></p>
+    <!-- left menu items -->
+    <div class="top-nav left-menu">
+      <ul class="right top-ul chevron">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="associates.html">Associates</a></li>
+      </ul>
+    </div>
+    <!-- logo -->
+    <ul class="logo-menu">
+      <a href="index.html" class="logo">
+        <!-- Logo White Version -->
+        <img class="logo-white" src="img/logo/kstechlogowhite.png" alt="">
+        <!-- Logo Dark Version -->
+        <img class="logo-dark" id="logo_dark" src="img/logo/kstechlogo.png" alt="">
+      </a>
+    </ul>
+    <!-- right menu items -->
+    <div class="top-nav right-menu">
+      <ul class="top-ul chevron">
+        <li><a href="pratikriya.html">Pratikriya</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   </header>
 
     <!-- MAIN -->
     <main role="main">
@@ -57,7 +96,9 @@
             <div class="overlay_container">
             <img src="img/clients/jecrclogo.png" alt="JECRC Foundation" class="image">
               <div class="overlay">
-                <div class="text">Hello World</div>
+                <div class="text">
+                  Jaipur Engineering College and Research Center
+                </div>
               </div>
             </div>
           </div>
@@ -71,53 +112,36 @@
             <hr class="break background-primary break-small break-center margin-bottom-50">
           </div>
           <div class="flex-container">
-            <div class="m-12 l-6 margin-m-bottom-30 flexbox">
-              <img src="img/img-01.jpg" alt="" class="">
+            <div class="m-12 l-6 margin-m-bottom-30 background-white flexbox">
+            <div class="overlay_container">
+            <img src="img/associates/istart.jpg" alt="iStart" class="image">
+              <div class="overlay">
+                <div class="text">
+                  Recognised Startup Under : <br>
+                  I-Start policy - a initiative by Govt. Of Rajasthan
+                </div>
+              </div>
             </div>
-            <div class="m-12 l-6 margin-m-bottom-30 flexbox">
-              <img src="img/img-01.jpg" alt="" class="">
             </div>
-            <div class="m-12 l-6 margin-m-bottom-30 flexbox">
-              <img src="img/img-01.jpg" alt="">
+
+            <div class="m-12 l-6 margin-m-bottom-30 background-white flexbox">
+            <div class="overlay_container">
+            <img src="img/associates/add_junction.jpeg" alt="iStart" class="image">
+              <div class="overlay">
+                <div class="text">
+                  Marketing and Endorsement Partner :<br>
+                  Add Junction Pvt. Ltd.<br> 
+                  Chandigarh and Ajmer                
+                </div>
+              </div>
             </div>
+            </div>
+
           </div>
         </section>
 
       </article>
 
-      <!-- Section 2 -->
-      <!-- <section class="section background-dark">
-        <div class="line text-center">
-          <i class="icon-sli-heart text-primary text-size-40"></i>
-          <h2 class="text-size-50 text-m-size-40"><b>Satisfied</b> Clients</h2>
-          <hr class="break background-primary break-small break-center margin-bottom-50">
-        </div>
-        <div class="line">
-          <div class="carousel-default owl-carousel carousel-wide-arrows">
-            <div class="item">
-              <div class="s-12 m-12 l-7 center text-center">
-                <div class="text-primary margin-bottom"><i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i></div>
-                <p class="margin-bottom">Iriure duis autem vel eum dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis  lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                <p class="text-primary text-size-16"><strong>Scott Star</strong> / CEO / Company</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="s-12 m-12 l-7 center text-center">
-                <div class="text-primary margin-bottom"><i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i></div>
-                <p class="margin-bottom">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, lobortis nisl ut aliquip ex ea commodo consequat vel illum dolore eu feugiat nulla facilisis.</p>
-                <p class="text-primary text-size-16"><strong>Mark Stoner</strong> / Web Developer / Company</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="s-12 m-12 l-7 center text-center">
-                <div class="text-primary margin-bottom"><i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i> <i class="icon-star text-size-12"></i></div>
-                <p class="margin-bottom">Vulputate velit duis autem vel eum iriure dolor in hendrerit in vulputate lobortis nisl ut aliquip ex ea commodo consequat velit esse molestie consequat, vel illum dolore eu feugiat nulla.</p>
-                <p class="text-primary text-size-16"><strong>Jane Naismith</strong> / Web Designer / Company</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- Section 4 -->
       <section class="section-small-padding background-white text-center">

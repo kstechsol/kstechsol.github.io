@@ -1963,9 +1963,3 @@ a.tab-label.active-btn {
       display:none !important;
     }
 }
-@media screen and (min-width:768px) {
-    div.top-nav.right-menu{
-      margin-left: 40px;
-      width: 40% !important;
-    }
-}
