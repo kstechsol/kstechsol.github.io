@@ -16,60 +16,24 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+      $ ( document ).ready(() => {
+        $('header').load("modules/header.html");
+        $('footer').load("modules/footer.html");        
+      });
+    </script>
   </head>
 
   <body class="size-1280">
     <!-- HEADER -->
     <header role="banner" class="position-absolute">
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-primary-dott full-width sticky">
-        <div class="top-nav">
-          <!-- mobile version logo -->
-          <div class="logo hide-l hide-xl hide-xxl">
-             <a href="index.html" class="logo">
-              <!-- Logo White Version -->
-              <img class="logo-white" src="img/logo/kstechlogowhite.png" alt="">
-              <!-- Logo Dark Version -->
-              <img class="logo-dark" src="img/logo/kstechlogo.png" alt="">
-            </a>
-          </div>
-          <p class="nav-text"></p>
-
-          <!-- left menu items -->
-          <div class="top-nav left-menu">
-             <ul class="right top-ul chevron">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="associates.html">Associates</a></li>
-             </ul>
-          </div>
-
-          <!-- logo -->
-          <ul class="logo-menu">
-            <a href="index.html" class="logo">
-              <!-- Logo White Version -->
-              <img class="logo-white" src="img/logo/kstechlogowhite.png" alt="">
-              <!-- Logo Dark Version -->
-              <img class="logo-dark" id="logo_dark" src="img/logo/kstechlogo.png" alt="">
-            </a>
-          </ul>
-
-          <!-- right menu items -->
-          <div class="top-nav right-menu">
-             <ul class="top-ul chevron">
-                <li><a href="pratikriya.html">Pratikriya</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-             </ul>
-          </div>
-        </div>
-      </nav>
     </header>
 
     <!-- MAIN -->
     <main role="main">
       <!-- Header -->
-      <header class="section-top-padding background-image text-center" style="background-color:#062259">
+      <section class="section-top-padding background-image text-center" style="background-color:#062259">
         <h1 class="text-extra-thin text-white text-s-size-20 text-m-size-20 text-size-30 text-line-height-1 margin-bottom-40 margin-top-50" id="logo-heading">
           KS Technological Solutions
         </h1>
@@ -82,11 +46,11 @@
         <!-- <p class="text-white"><span class="tagline"><em>Getting the best . . .</em></span></p> -->
         <!-- <i class="slow icon-sli-arrow-down text-white margin-top-20 text-size-16"></i> -->
         <!-- Image -->
-        <!-- <img class="margin-top-20 center" src="img/app.png" alt=""> -->
+        <img class="margin-top-20 center" src="img/app.png" alt="">
 
         <!-- white full width arrow object -->
         <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
-      </header>
+      </section>
 
       <!-- Section 1 -->
       <section class="background-white">
@@ -158,8 +122,9 @@
       <!-- Section 2 -->
       <section class="section background-white">
         <div class="line text-center">
-          <p class="text-primary text-size-20">Astonishing features of</p>
-          <h2 class="text-dark text-size-50 text-m-size-40"><b>Pratikriya</b></h2>
+          <p class="text-primary text-center margin-bottom1x text-size-30">Astonishing features of</p>
+          <img src="img/pratikriya.png" class="center" alt="Pratikriya">
+          <!-- <h2 class="text-dark text-size-50 text-m-size-40"><b>Pratikriya</b></h2> -->
           <i class="icon-chevron_down text-primary margin-bottom-50 text-size-20"></i>
         </div>
 
@@ -193,12 +158,6 @@
                 <div class="item">
                   <img src="img/responsive-02.png"/>
                 </div>
-                <div class="item">
-                  <img src="img/responsive-03.png"/>
-                </div>
-                <div class="item">
-                  <img src="img/responsive-04.png"/>
-                </div>
               </div>
             </div>
 
@@ -224,20 +183,25 @@
         </div>
       </section>
 
-      <section class="section background-white">
+      <section class="section background-dark">
         <div class="line text-center">
-          <h2 class="text-dark text-size-50 text-m-size-40">Our <b>Clients</b></h2>
+          <h2 class="text-white text-size-50 text-m-size-40">Our <b>Clients</b></h2>
           <hr class="break background-primary break-small break-center margin-bottom-50">
         </div>
         <div class="flex-container">
-          <div class="m-12 l-6 margin-m-bottom-30 flexbox">
+<!--           <div class="m-12 l-6 margin-m-bottom-30 flexbox">
             <img src="img/img-01.jpg" alt="" class="">
           </div>
           <div class="m-12 l-6 margin-m-bottom-30 flexbox">
             <img src="img/img-01.jpg" alt="" class="">
           </div>
-          <div class="m-12 l-6 margin-m-bottom-30 flexbox">
-            <img src="img/img-01.jpg" alt="">
+ -->      <div class="m-12 l-6 margin-m-bottom-30 flexbox background-white">
+            <div class="overlay_container">
+            <img src="img/clients/jecrclogo.png" alt="JECRC Foundation" class="image">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -247,43 +211,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <!-- Social -->
-      <!-- <div class="background-primary padding text-center">
-        <a href="/"><i class="icon-facebook_circle text-size-25 text-dark"></i></a>
-        <a href="/"><i class="icon-twitter_circle text-size-25 text-dark"></i></a>
-        <a href="/"><i class="icon-google_plus_circle text-size-25 text-dark"></i></a>
-        <a href="/"><i class="icon-instagram_circle text-size-25 text-dark"></i></a>
-        <a href="/"><i class="icon-linked_in_circle text-size-25 text-dark"></i></a>
-      </div> -->
-      <!-- Main Footer -->
-      <section class="section background-dark" style="background-color:#062259 !important;">
-        <div class="line">
-          <div class="margin2x">
-            <div class="s-12 m-6 l-6 xl-6">
-              <h4 class="text-white text-strong margin-m-top-30">Term of Use</h4>
-              <a class="text-primary-hover text-size-16 text-white" href="page.html">Terms and Conditions</a><br>
-            </div>
-            <div class="s-12 m-6 l-6 xl-6">
-               <h4 class="text-white text-strong margin-m-top-30">Contact Us</h4>
-                <p class="text-size-16 text-white"><i class="icon-sli-screen-smartphone text-size-16 text-white"></i> 0800 4521 800 50</p>
-                <a class="text-primary-hovertext-size-16 text-white" href="mailto:contact@sampledomain.com"><i class="icon-sli-mouse text-white"></i> contact@sampledomain.com</a><br>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="background-white">
-         <div class="line">
-            <hr class="break margin-top-bottom-0" style="border-color: white;">
-         </div>
-      </div>
-      <!-- Bottom Footer -->
-      <section class="padding-2x background-dark full-width"  style="background-color:#062259 !important;">
-        <div class="line">
-          <div class="s-12 l-6">
-            <p class="text-size-16 text-strong text-white">Copyright 2018, KS Technological Solutions</p>
-          </div>
-        </div>
-      </section>
+      <!-- Content inserted from module -->
     </footer>
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
