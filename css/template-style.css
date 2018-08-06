@@ -1698,9 +1698,6 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   border: 0 !important;
   background: rgba(0,0,0,0.04) !important;
 }
-.customform .required {
-  border-left: 2px dotted #dd442c !important;
-}
 
 /* Aside Navigation */
 .aside-nav > ul > li > a:hover, .aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
@@ -1950,6 +1947,11 @@ a.tab-label.active-btn {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .text{
+    font-size: 16px;
+  }
+}
 /*---------------------------------------------*/
 .shadow-dark{
     box-shadow: 2px 2px 2px grey;
@@ -1958,8 +1960,15 @@ a.tab-label.active-btn {
     box-shadow: 2px 2px 2px white;  
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     #logo-heading {
       display:none !important;
     }
+}
+
+
+@media screen and (min-width: 768px) {
+nav.fixed .left-menu, nav.fixed .right-menu{
+      padding-left: 4vw;
+  }
 }

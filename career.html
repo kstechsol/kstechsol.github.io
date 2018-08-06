@@ -79,52 +79,58 @@
           </h1>
           <br>
           <h2 class="text-white text-size-40 text-line-height-1  margin-top-20">
-            Gallery
+            Career with us
           </h2>
           <br><br>
           <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
         </section>
-        <!-- Section 1 -->
-        <section class="section background-white">
-          <div class="line">
-            <div class="margin2x">
-              <div class="s-12 m-6 margin-bottom-30">
-                <div class="overlay_container">
-                <img class="full-img" src="img/portfolio/portfolio-01.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="text">
-                      Pratikriya | Education<br>
-                      Client Memento to Shri V.K Chandana, Principal, JECRC Foundation, Jaipur
-                    </div>
+
+        <!-- Section 3 -->
+        <section class="section background-white-hightlight">
+          <div class="s-12 m-12 l-4 center">
+            <!-- <h3 class="text-size-30 margin-bottom-40 text-center"><b>Catch Us Here</b></h3> -->
+            <form class="customform text-dark" method="post" action="https://script.google.com/macros/s/AKfycbzHQMThK-NI9UX23F68bAmCIyxcND3fri-MV-kwxLYQbmgbKVw/exec" id="gform">
+              <div class="line">
+                <div class="s-12">
+                  <input name="domain" class="required subject" placeholder="Domain" title="Domain" type="text" list="domains" required/>
+                  <datalist id="domains">
+                    <option value="Technical">
+                    <option value="Sales">
+                  </datalist>
+                </div>
+                <div class="margin">
+                  <div class="s-12 m-12 l-6">
+                    <input name="name" class="name" placeholder="Your name" title="Your name" type="text" required/>
+                  </div>
+                  <div class="s-12 m-12 l-6">
+                    <input name="contact" class="required email" placeholder="Contact No" title="Contact No" type="tel" required/>
                   </div>
                 </div>
-              </div>
-              <div class="s-12 m-6 margin-bottom-30">
-                <div class="overlay_container">
-                <img class="full-img" src="img/portfolio/portfolio-02.jpg" alt=""/>
-                </div>
-              </div>
-              <div class="s-12 m-6 margin-bottom-30">
-                <div class="overlay_container">
-                <img class="full-img" src="img/portfolio/portfolio-03.jpg" alt=""/>
-<!--                   <div class="overlay">
-                    <div class="text">Hello World</div>
-                  </div>
- -->                </div>
-              </div>
-              <div class="s-12 m-6 margin-bottom-30">
-                <div class="overlay_container">
-                <img class="full-img" src="img/portfolio/portfolio-04.jpg" alt=""/>
-<!--                   <div class="overlay">
-                    <div class="text">Hello World</div>
-                  </div>
- -->                </div>
               </div>
 
+              <div class="line">
+                <div class="s-12">
+                  <input name="email" class="required email" placeholder="Your Email" title="Your Email" type="email" required/>
+                </div>
+                <div class="s-12">
+                  <input name="resume" class="required subject" placeholder="Resume Link" title="Resume" type="url" required/>
+                </div>
+                <div class="s-12">
+                  <textarea name="message" class="required message" placeholder="Why should we hire you?" rows="3"></textarea>
+                </div>
+                <div class="s-12"><button class="button border-radius text-white background-primary" id="submit_button" type="submit">Submit</button></div>
+              </div>
+            </form>
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div style="display:none;" class="text-dark text-strong" id="thankyou_message">
+              <h2><em>Thanks</em> for contacting us!
+                We will get back to you soon!</h2>
             </div>
           </div>
         </section>
       </article>
+    </main>
+
     <!-- FOOTER -->
     <footer>
 
@@ -132,5 +138,8 @@
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="js/template-scripts.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+  <!-- END -->
   </body>
 </html>
